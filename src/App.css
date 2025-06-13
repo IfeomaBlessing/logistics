@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding:0;
+  text-decoration:none;
+  /* list-style-type: none; */
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline:none;
+  border:none;
+  font-family: "Inter", sans-serif;
+}
+
+img{
+  object-fit: cover;
+}
+h1{
+  font-size: 3rem;
+  font-weight:700;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight:600;
+}
+h3{
+  font-size:1.8rem;
+  font-weight:600;
+}
+h4{
+  font-size:1rem;
+  font-weight:600;
+}
+p, li{
+  font-size:0.9rem;
+
+}
+.section-p{
+ padding:60px 8%;
+}
+.margin{
+  padding:30px 8%;
+}
+
+.container{
+  
+}
+
+.button{outline: none;
+  border: none;
+  background:rgb(82, 9, 9);
+  font-size: 16px;
+  color:white;
+  padding:0.8rem 2rem;
+  cursor:pointer;
+  word-spacing:3px;
+  letter-spacing: 1px;
+  border-radius:10rem;
+  margin-top:2rem;
+  display: block;
+}
+.button:hover{
+  color:rgb(82, 9, 9); 
+  background-color:white;
+  font-weight:600;
+  /* border: 1px solid rgba(82,9,9); */
+}
+.btn{
+  outline: none;
+  border: none;
+  background:rgb(82, 9, 9);
+  font-size: 14px;
+  color:white;
+  padding:0.6rem 1.4rem;
+  cursor:pointer;
+  word-spacing:3px;
+  letter-spacing: 1px;
+  border-radius:1rem;
+  margin-top:1.5rem;
+  display: block;
+}
+
+
+@media screen and (max-width:769px){
+  .section-p{
+      padding:60px 5%;
+   }
+}
+
+
+@media screen and (max-width:450px){
+  
+h1{
+  font-size: 2.2rem;
+}
+
+h2{
+  font-size: 2rem;
+  font-weight:600;
+}
+h3{
+  font-size:1rem;
+  font-weight:600;
+}
+}

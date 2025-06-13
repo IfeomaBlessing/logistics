@@ -1,0 +1,50 @@
+footer{
+    display:flex;
+    justify-content: space-between;
+    padding:0 5%;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+footer .col{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 20px;
+    
+}
+footer .col h4{
+    margin-bottom: 20px;
+}
+
+footer .col p{
+    color: rgb(107, 101, 101);
+    margin:0 0 10px 0;
+    transition: transform 0.3s;
+}
+footer .col p:hover,
+footer .social-icons i:hover{
+    color: green;
+    font-weight: bold;
+}
+footer .follow{
+    margin-top:10px;
+}
+
+footer .social-icons i{
+       color:black;
+       margin-right: 6px;
+       transition: transform 0.3s;
+}
+footer .col .app, .cards{
+display: flex;
+align-items: center;
+}
+
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+}
