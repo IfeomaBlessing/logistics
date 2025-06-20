@@ -21,14 +21,17 @@ const Layout=()=> {
     window.addEventListener("scroll", handleNavbar)
   return (
     <>
-      <Navbar scroll={scroll}/>
-      <div className="container">
-      <Hero/>
-      <About/>
-      <Service/>
-      <Contact/>
-      </div>
- 
+    <Navbar scroll={scroll}/>
+      
+    <Routes>
+      <Route path="/" element={<Hero />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/services" element={<Service />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+
+   
+       <Contact/>
       <Footer/>
     </>
   )

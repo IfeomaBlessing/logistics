@@ -1,4 +1,4 @@
-import {  faCrosshairs, faBriefcase,faLocation, faLocationDot, faNetworkWired, faPhoneVolume, faMobilePhone,  } from '@fortawesome/free-solid-svg-icons'
+import {  faCrosshairs, faBriefcase  } from '@fortawesome/free-solid-svg-icons'
 import { faVolumeControlPhone } from '@fortawesome/free-solid-svg-icons/faVolumeControlPhone';
 
 

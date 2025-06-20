@@ -5,7 +5,7 @@ import serviceData from '../service/serviceData';
 import Testimonial from '../about/Testimonials';
 import Box from '../hero/Box';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight} from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowRight, faPhone} from '@fortawesome/free-solid-svg-icons';
 import image1 from '../../assets/images/image1.jpg'
 
 
@@ -81,7 +81,7 @@ const Hero = () => {
 {/* Another section   */}
 <div className='homeContainer margin'>
 
-<section className="Box" style={{backgroundColor :"red"}}>
+<section className="Box" >
   
  <div className="Box-container">
  {Box.map((x)=> (                
@@ -99,10 +99,10 @@ const Hero = () => {
 </section>
     
     
-<section className='about-page'id='About'>
+<section className='heroAbout'>
         
 
-    <div className="aboutBox">
+    <div className="homeAbout flex" style={{marginBottom:'2.5rem'}}>
     <div class="col-2">    
     <h4 style = {{color:'green'}}>About Us</h4>
         
@@ -115,7 +115,7 @@ const Hero = () => {
        Food Delivery, Agriculture Logistics and E-commerce Solutions.
     </p>
 
-<button className='button'><a href="#">Learn More</a></button>
+<button className='button' ><a href="#">Learn More</a></button>
 
             
                           
@@ -136,7 +136,7 @@ const Hero = () => {
 
 {/* Another section */}
 
-<section className="serviceContainer margin" id='Services'>
+<section className="serviceContainer margin">
       <div className="serviceTop">
       <h2 style = {{wordSpacing :'10px'}}>OUR SERVICES</h2>
         <h3>Trusted For Our Services</h3>
@@ -144,7 +144,7 @@ const Hero = () => {
       </div>
         
 
-        <div className="serviceWrapper">
+        <div className="serviceWrapper flex">
         
             {serviceData.map((data)=> (
          <div className="card">
@@ -166,6 +166,64 @@ const Hero = () => {
         </div>
       
 </section>
+
+<section className="truck-wrapper ">
+  <div className="truck-image"></div>
+</section>
+
+<section className='contact flex section-p'>
+  
+  <div className='col1 flex' style={{width:"60%"}}>
+    <div className="icons">
+      <FontAwesomeIcon icon={faPhone}/>
+ 
+    </div>
+
+    <div style={{marginLeft:"1.3rem"}}>
+    <h3 >LOOKING FOR THE BEST LOGISTICS SERVICES?</h3>
+    <div className="dash-wrapper"style={{marginTop:"1.3rem"}}>
+    <div className="dash"></div>
+    <p style={{marginLeft:"1.3rem"}}>We make your cargo transport simple, contact us today.</p>
+    </div>
+    </div>
+
+  </div>
+
+  <div className='col2'>
+    <button className='button'><a href="#">Contact us today</a></button>
+  </div>
+</section>
+
+
+{/* <section className='about-page margin'>
+        
+
+    <div className="aboutBox flex" style={{alignItems:'flex-start'}}>
+    <div class="col1" style={{width :"45%"}}>    
+
+    <img src={image1} alt="image" className="bigImg"style={{width :"100%"}}/>                  
+    </div> 
+
+   <div className="col2" style={{width :"45%"}}>  
+   <h3>GET IN TOUCH</h3>
+   <p>Please don't hesitate to contact us</p>    
+           <form action="#" style={{marginTop:"10px"}}>
+
+           <div className='t-form'>
+           <input type="text" placeholder='Name' />
+            <input type="email" placeholder='Email' />
+            
+           </div>
+            <input type="text" placeholder='Subject' />
+        
+            
+            <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
+            <button className='button'>Submit</button>
+           </form>
+   </div>
+    </div> 
+    
+</section> */}
 </div>
   )
 }

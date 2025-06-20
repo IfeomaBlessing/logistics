@@ -1,52 +1,43 @@
 import React from 'react';
 import '../footer/fstyle.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   return (
     <footer>
+      <section className='flex section-p' style={{background:"lightBlue"}}>
+
+
       <div className="col">
-        <h4>Contact</h4>
-        <p>
-          <strong>Address</strong>: Whitehouse Marina close, Suite 23, Lagos
-        </p>
-        <p>
-          <strong>Phone</strong>: 012567965, +14386434576
-        </p>
-        <p>
-          <strong>Email</strong>: classicmenwears@gmail.com
-        </p>
-        <div className="follow">
-          <h4>Follow Us</h4>
-          <div className="social-icons">
-            <FontAwesomeIcon  />
-            <FontAwesomeIcon  />
-            <FontAwesomeIcon  />
-            <FontAwesomeIcon  />
-            <FontAwesomeIcon  />
-          </div>
-        </div>
+        <h4>LOGO HERE</h4>
       </div>
+
       <div className="col">
-        <h4>About</h4>
-        <p>About Us</p>
-        <p>Delivery Information</p>
-        <p>Terms & Conditions</p>
-        
+        <h4>MM&EE Logistics Ltd</h4>
+        <p>Ajose Adeogun street, Victoria island, Lagos, Nigeria</p>
+        <p>MM&EE@email.com</p>
       </div>
+
       <div className="col">
-        <h4>Work Hours</h4>
+        <h4>Business Hours</h4>
         <p>Mon - Fri : 8AM - 5PM</p>
         <p>Sat : 9AM - 2PM </p>
-        <p>Are you in need of logisitcs services?</p>
+        </div>
 
-        <button>Contact Us</button>
+
+         <div className='col'>
+        <button className='button'><a href="#">Contact Us</a></button>
       </div>
-      <hr />
-      <div className="copyright">
+
+      </section>
+   
+
+       <section style={{background:"green"}}>
+       <div className="copyright">
         <p>&copy; {new Date().getFullYear()}, MM & EE Logistics - Support. All rights reserved.</p>
       </div>
+       </section>
+    
     </footer>
   );
 };

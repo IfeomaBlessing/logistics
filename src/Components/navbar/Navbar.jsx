@@ -1,9 +1,8 @@
 
 import React, {useState} from 'react'
-import {Link} from 'react-scroll'
+import {Link, useLocation} from 'react-router-dom'
 import '../navbar/navstyle.css'
 import logo from '../../assets/real-log.png'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -12,10 +11,15 @@ const Navbar = ({scroll}) => {
        
     const [clicked, setClicked] = useState(false);
     const clickMenu =()=> {setClicked(!clicked)}
+
+    
+  const location = useLocation();
+  const isHome = location.pathname === '/';
   return (
  
         <>      
-         <header className={scroll ? 'header scrolled' : 'header'} >
+         
+         <header className={`${isHome ? (scroll ? 'header scrolled' : 'header') : 'header solid'}`}>
            <div className='logo'>
                <img src={logo} alt='logo'/> 
             </div>
@@ -24,31 +28,30 @@ const Navbar = ({scroll}) => {
     
             <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
            <li>
-                        <Link to= "Home" className='navlink'
-                        // activeClass='activeLink'
+                        <Link to= "/" className='navlink'
+      
                          onClick ={clickMenu} >
                           Home</Link>
                     </li>
                            <li>
-                        <Link to="About" className= 'navlink'
-                        // activeClass='activeLink'
+                        <Link  to="/About" className= 'navlink'
                         onClick ={clickMenu}>
                           About</Link>
                     </li>
     
                     <li>
-                        <Link to="Services" className='navlink'
-                        // activeClass='activeLink'
+                        <Link to="/Services" className='navlink'
+              
                         onClick ={clickMenu}>
                           Services</Link>
                     </li>
     
-                    <li>
-                        <Link to="Contact" className= 'navlink'
-                        // activeClass='activeLink'
+                    {/* <li>
+                        <Link to="/Contact" className= 'navlink'
+                     
                          onClick ={clickMenu}>
                           Contact</Link>
-                    </li>
+                    </li> */}
     
             </ul>
     

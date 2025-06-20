@@ -18,40 +18,14 @@ const Service = () => {
   
 
   return (
-    <div> 
+    <div className='page'> 
 
-    <section className="serviceContainer section-p" id='Services'>
-      <div className="serviceTop">
-      <h4>OUR SERVICES</h4>
-        <h2>Trusted For Our Services</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, sapiente. Nulla nesciunt quam, ut optio magnam quis!
-          Magnam, aliquam id. 
-          Magnam ab ut perferendis libero quod error accusantium fuga eveniet.  </p>
-      </div>
-        
+<section className="Header flex">
 
-        <div className="serviceWrapper">
-        
-            {serviceData.map((data)=> (
-         <div className="card">
-              
-                      <div className="content">
-                        <div className="service-img">
-                        <img src={data.bgImage} alt="" />
-                        </div>
-                
-                       <h4>{data.name}</h4>
-                       <p>{data.text}</p>      
-               </div>
-           
-                    
-           </div>
-                
-             ))
-            }
-        </div>
-      
-    </section>
+<p>MM&EE Logistics</p>
+<h2>OUR SERVICES</h2>
+
+</section>
 
     <section className="FAQ section-p">
     <h2>Frequently Asked Questions</h2>
@@ -82,4 +56,4 @@ const Service = () => {
   )
 }
 
-export default Service
+export default Service;

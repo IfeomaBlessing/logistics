@@ -1,12 +1,17 @@
-
+.serviceContainer{
+    background-position: center;
+    background: 
+    linear-gradient(0deg, transparent, rgba(122, 106, 81, 0.7), rgba(255, 246, 233, 0.1)),
+    url('../../assets/sbg.jpg') center;
+    padding-bottom:10rem;
+    position: relative;
+    z-index: 1;
+}
 .serviceTop{
-    display: flex;
-    align-items: center;
-    justify-content:center;
+  
     flex-direction: column;
     gap:5px;
     text-align: center;
-    background-color: blue;
 }
 /* .serviceTop h4{
    
@@ -16,7 +21,6 @@
     color:rgb(82, 9, 9);
 }
 .serviceWrapper{
-display:flex;
 justify-content:space-around;
 flex-wrap: wrap;
 margin-top:1rem;
@@ -24,22 +28,16 @@ background-color:;
 }
 
 
-.card{
-
-      /* background: rgb(237, 233, 233);
-      border-radius:10px;
-      margin: 10px 0;
-      flex-basis:30%;
-       padding:10px;
-       border:2px solid transparent; */
+.card{    
        background:white;
        width:300px;
-       height:240px;
+       height:250px;
        margin:10px 0;
        display:flex;
        align-items: center;
        flex-direction:column;
-       box-shadow: ;
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+       box-shadow: 10px 6px 15px rgba(0, 0, 0, 0.6);
 }
 
 

@@ -123,6 +123,91 @@
     
 }
 
+/* Home-about */
+
+
+.col-2{
+    width: 45%;
+   line-height:30px;
+   margin-right: 10px;
+   word-spacing:5px;
+} 
+
+.right-about{
+    width: 45%;
+}
+
+.right-about img{
+    width:100%;
+
+}
+
+
+
+
+.truck-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index:2;
+    margin-top: -80px; 
+    padding-bottom: 40px; 
+  }
+  
+  .truck-image{
+    background: url('../../assets/images/image1.jpg') no-repeat center center / cover;
+    width: 80%;             
+    max-width: 800px;
+    height: 300px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+  }
+
+  .contact{
+    background: rgb(126, 219, 250);
+    align-items:flex-start;
+    margin-top:4rem;
+  }
+
+  .contact .dash{
+    height:1rem;
+    width:0.2rem;
+    color: green;
+    background-color: green;
+}
+.dash-wrapper{
+    display: flex;
+  
+}
+.icons{
+     color:red;
+    font-size:25px;
+
+}
+
+input,textarea{width: 100%;
+    padding:0.8rem;
+    border:1px solid grey;
+    border-radius: 4px;
+    margin-bottom:0.4rem;
+    color:var(--nav-color);
+    background:transparent;
+    box-shadow:2px 2px 8px rgba(0,0,0,0.5),
+    5px 5px 10px rgba(0,0,0,0.2);
+}
+
+form button{
+    margin-top:auto;
+    display: block;
+}
+
+.t-form{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:8px;   
+}
+
+
 @keyframes animateContent{
     0%{
         opacity: 0;

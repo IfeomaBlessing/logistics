@@ -9,7 +9,11 @@
   border:none;
   font-family: "Inter", sans-serif;
 }
-
+.flex{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
 img{
   object-fit: cover;
 }
@@ -41,9 +45,6 @@ p, li{
   padding:30px 8%;
 }
 
-.container{
-  
-}
 
 .button{outline: none;
   border: none;
@@ -54,9 +55,9 @@ p, li{
   cursor:pointer;
   word-spacing:3px;
   letter-spacing: 1px;
-  border-radius:10rem;
+  border-radius:1.5rem;
   margin-top:2rem;
-  display: block;
+  display:block;
 }
 .button:hover{
   color:rgb(82, 9, 9); 
@@ -64,7 +65,7 @@ p, li{
   font-weight:600;
   /* border: 1px solid rgba(82,9,9); */
 }
-.btn{
+.btn1{
   outline: none;
   border: none;
   background:rgb(82, 9, 9);
