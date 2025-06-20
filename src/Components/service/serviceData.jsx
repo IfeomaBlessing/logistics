@@ -1,4 +1,4 @@
-import React from 'react'
+
 import service1 from '../../assets/air.jpeg'
 import service3 from '../../assets/cargo.jpg'
 import service4 from '../../assets/cargo van.jpeg'

@@ -27,6 +27,44 @@ const Service = () => {
 
 </section>
 
+<section>
+  {serviceData.map((x, index) => (
+    <article
+      key={index}
+      style={{
+        backgroundColor: index % 2 !== 0 ? 'red' : 'transparent',
+        padding: '2rem 0',
+      }}
+    >
+      <div
+        className="homeAbout flex margin"
+        style={{
+          flexDirection: index % 2 === 0 ? 'row' : 'row-reverse',
+          alignItems: 'center',
+          gap: '2rem',
+        }}
+      >
+        <div className="right-about col-2">
+          <img src={x.bgImage} alt="service" className="bigImg" />
+        </div>
+
+        <div className="col-2">
+          <h2 style={{ marginBottom: '1rem', wordSpacing: '6px' }}>
+            {index % 2 === 0
+              ? 'AT MM&EE Logistics'
+              : 'UNMATCHED EXPERIENCE AND COMMITMENT'}
+          </h2>
+          <p>{x.text}</p>
+          <button className="button">
+            <a href="#">Learn More</a>
+          </button>
+        </div>
+      </div>
+    </article>
+  ))}
+</section>
+
+
     <section className="FAQ section-p">
     <h2>Frequently Asked Questions</h2>
     
