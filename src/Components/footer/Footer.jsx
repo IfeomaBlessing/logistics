@@ -26,7 +26,7 @@ const Footer = () => {
 
 
          <div className='col'>
-        <button className='button'><a href="#">Contact Us</a></button>
+         <a href="tel:+2348055844640" className="button">Contact Us</a>
       </div>
 
       </section>

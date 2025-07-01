@@ -190,7 +190,7 @@ const Hero = () => {
 
   <div className='col2'>
 
-  <a href="contact">Contact Us Today</a>
+  <a href="tel:+2348055844640" className="button">Contact Us Today</a>
   </div>
 </section>
 
