@@ -7,22 +7,29 @@
 .Header{
     background: 
     linear-gradient(0deg, transparent, rgba(122, 106, 81, 0.7), rgba(212, 183, 142, 0.1)),
-    url('../../assets/sbg.jpg') center;
+    url('../../assets/images/aboutCard.jpg') center;
     height:35vh;
     flex-direction: column;
     justify-content: center;
 }
 .section .homeAbout{
-   align-items: flex-start;
+align-items: flex-start;
 }
 
 .section{
     background:rgba(223, 219, 219, 0.5);
 }
 .aboutContent{
-    /* flex-direction: column; */
+    
     text-align: center;
 }
+.aboutContent h2{
+    margin-bottom: 20px;
+}
+section .homeAbout{
+    
+    align-items: flex-start;
+    }
 
 .miniImage img{
     width:50%;

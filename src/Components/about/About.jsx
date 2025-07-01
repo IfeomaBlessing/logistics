@@ -1,6 +1,6 @@
 import React from 'react'
 import "../about/about.css"
-import image1 from '../../assets/images/image1.jpg'
+import image1 from '../../assets/images/About_img.jpg'
 import Testimonial from './Testimonials'
 import Box from '../hero/Box';
 import serviceData from '../service/serviceData';
@@ -53,7 +53,7 @@ const About = () => {
     </section>
 
     <section className='aboutContent section section-p'>
-       <h2>THEY SAY IT CAN'T BE DONE, WE SAY IT WILL BE DONE</h2>
+       <h2 >THEY SAY IT CAN'T BE DONE, WE SAY IT WILL BE DONE</h2>
        <p>When you work with MM&EE Logistics, you can be rest assured that we will never leave  a 
         shipment behind! We will do whatever it takes to meet your business unique needs and offer exquisite service.
        </p>
@@ -68,11 +68,11 @@ const About = () => {
            <div class="col-2">    
        
                
-       <h2  style = {{marginBottom:'3px',wordSpacing:'10px'}}>UNMATCHED EXPERIENCE AND COMMITMENT </h2> 
+       <h2  style = {{marginBottom:'30px',wordSpacing:'10px'}}>UNMATCHED EXPERIENCE AND COMMITMENT </h2> 
        <p>
          Above anything else, MM&EE Logisitcs is committed to excellent service and prompt transportation. 
          We take pride in being your trusted source for all your logisitcs needs.
-
+              <br />
          Our goal is for our work and dedication to speak for themselves. We have been in busisness for 
          years and still retain the same drivers and customers since our beginnings, and we are proud of it.
        </p>
@@ -82,11 +82,9 @@ const About = () => {
 
             <div className="right-about col-2">  
             <p>
-         Above anything else, MM&EE Logisitcs is committed to excellent service and prompt transportation. 
-         We take pride in being your trusted source for all your logisitcs needs.
-
-         Our goal is for our work and dedication to speak for themselves. We have been in busisness for 
-         years and still retain the same drivers and customers since our beginnings, and we are proud of it.
+                You will receive prompt, professional, considerate and careful service and it is our guarantee that every transportation is managed and organised with the highest level of security and quality.
+                <br />
+                Our experience in the logistics field has given us the experience needed to ensure your satisfaction everytime.
        </p>
                 <div className="miniImage flex">
                 <img src={image1} alt="image" className="bigImg"/>   

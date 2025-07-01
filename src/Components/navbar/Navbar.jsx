@@ -19,7 +19,7 @@ const Navbar = ({scroll}) => {
  
         <>      
          
-         <header className={`${isHome ? (scroll ? 'header scrolled' : 'header') : 'header solid'}`}>
+         <header className={`${isHome ? (scroll ? 'header scroll' : 'header') : 'header scroll'}`}>
            <div className='logo'>
                <img src={logo} alt='logo'/> 
             </div>

@@ -2,29 +2,26 @@
     background-position: center;
     background: 
     linear-gradient(0deg, transparent, rgba(122, 106, 81, 0.7), rgba(255, 246, 233, 0.1)),
-    url('../../assets/sbg.jpg') center;
-    padding-bottom:10rem;
+    url('../../assets/delivery.jpg') no-repeat center/ cover;
+    padding-bottom:;
     position: relative;
     z-index: 1;
 }
-.serviceTop{
-  
-    flex-direction: column;
-    gap:5px;
+
+.serviceContainer h3{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
     text-align: center;
+    margin-bottom: 2rem;
 }
-/* .serviceTop h4{
-   
-} */
-.serviceContainer h2{
-    text-align: center;
-    color:rgb(82, 9, 9);
-}
+
+
+
+
 .serviceWrapper{
 justify-content:space-around;
 flex-wrap: wrap;
 margin-top:1rem;
-background-color:;
 }
 
 
@@ -45,7 +42,7 @@ background-color:;
     max-width:200;
     width:100%;
     height:200px;
-    margin-bottom:10px;
+    margin-bottom:5px;
 }
 
 
@@ -148,7 +145,7 @@ background-color:;
         .serviceHead{
             
             background-image: linear-gradient(0deg,transparent,rgba(68, 75, 46, 0.7),
-            rgba(188, 237, 90, 0.1)),url(../../assets/sbg.jpg);
+            #bced5a1a),url(../../assets/sbg.jpg);
             height:70vh;
             width: 100%;
             -webkit-text-stroke: 1px white;

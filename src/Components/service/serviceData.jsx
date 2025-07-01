@@ -1,40 +1,35 @@
 
 import service1 from '../../assets/air.jpeg'
-import service3 from '../../assets/cargo.jpg'
-import service4 from '../../assets/cargo van.jpeg'
+import service2 from '../../assets/cargo.jpg'
+import service4 from '../../assets/images/warehouse.jpg'
+import service3 from '../../assets/images/Road.jpg'
 
 export const serviceData =[
     {
         bgImage: service1,
         name:"Air Freight",
-
-        text:"Empower your real estate ventures with our experienced consulting team. Whether you're buying, selling, or investing, we offer strategic guidance and market expertise to help you make informed decisions.",
-        alt:"Land"
+        alt:"Air Freight"
     },
 
+    {
+        bgImage: service2,
+        name:"Ocean Freight",
+        alt:"Ocean Freight"
+    },
     {
         bgImage: service3,
-        name:"Ocean Freight",
-        text:"Empower your real estate ventures with our experienced consulting team. Whether you are buying, selling, or investing, we offer strategic guidance and market expertise to help you make informed decisions.",
-        alt:"Land"
-    },
-    {
-        bgImage: service4,
         name:"Road Freight",
-        text:"Make a lasting impression in the digital realm with our avant-garde web design services. From captivating aesthetics to seamless functionality, we craft websites that not only represent your brand but elevate your online presence.",
-        alt:"Land"
+        alt:"Road Freight"
     },
     {
          bgImage: service4,
-        name:"Road Freight",
-        text:"Make a lasting impression in the digital realm with our avant-garde web design services. From captivating aesthetics to seamless functionality, we craft websites that not only represent your brand but elevate your online presence.",
-        alt:"Land"
+        name:"Warehousing",
+        alt:"Warehousing"
     },
     {     bgImage: service4,
-        name:"Road Freight",
-        text:"Make a lasting impression in the digital realm with our avant-garde web design services. From captivating aesthetics to seamless functionality, we craft websites that not only represent your brand but elevate your online presence.",
+        name:"Custom Clearance",
         alt:"Land"
     }
 ]
 
-export default serviceData
+export default serviceData;

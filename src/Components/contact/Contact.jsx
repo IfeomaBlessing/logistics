@@ -1,6 +1,6 @@
 import React from 'react'
 import '../contact/cstyle.css'
-import image1 from '../../assets/images/image1.jpg'
+import image from '../../assets/images/contact_img.jpeg'
 
 
 
@@ -13,7 +13,7 @@ const Contact = () => {
         <div className="aboutBox flex" style={{alignItems:'flex-start'}}>
         <div class="col1" style={{width :"45%"}}>    
     
-        <img src={image1} alt="image" className="bigImg"style={{width :"100%"}}/>                  
+        <img src={image} alt="image" className="bigImg"style={{width :"100%"}}/>                  
         </div> 
     
        <div className="col2" style={{width :"45%"}}>  

@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import { Link } from 'react-router-dom'
 import heroData from './heroData'
 import '../hero/herostyle.css'
 import serviceData from '../service/serviceData';
@@ -6,12 +7,13 @@ import Testimonial from '../about/Testimonials';
 import Box from '../hero/Box';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faPhone} from '@fortawesome/free-solid-svg-icons';
-import image1 from '../../assets/images/image1.jpg'
+import image1 from '../../assets/images/abt_img.jpg'
 
 
 
 const Hero = () => {
     const [currentSlide, setCurrentSlide] =useState(0)
+
     const slideLength =heroData.length
     let scrollSlide = true;
      let slideInterval;
@@ -41,6 +43,9 @@ const Hero = () => {
     useEffect(()=>{
        setCurrentSlide(0)
     }, [])
+
+
+
 
   return (
     <div className='homeContainer'>
@@ -79,9 +84,9 @@ const Hero = () => {
 
 
 {/* Another section   */}
-<div className='homeContainer margin'>
+<div className='homeContainer '>
 
-<section className="Box" >
+<section className="Box section-p" >
   
  <div className="Box-container">
  {Box.map((x)=> (                
@@ -89,7 +94,7 @@ const Hero = () => {
                    <FontAwesomeIcon icon={x.icon} className ="icons" />
                   
                    <div className="content">
-                   <h2>{x.header}</h2>
+                   <h4>{x.header}</h4>
                     <p>{x.text}</p>
                    </div>
                   </div>
@@ -99,14 +104,14 @@ const Hero = () => {
 </section>
     
     
-<section className='heroAbout'>
+<section className='heroAbout margin'>
         
 
     <div className="homeAbout flex" style={{marginBottom:'2.5rem'}}>
     <div class="col-2">    
-    <h4 style = {{color:'green'}}>About Us</h4>
+    <h5>About Us</h5>
         
-    <h2  style = {{marginBottom:'3px',wordSpacing:'10px'}}>AT MM&EE Logistics, </h2> 
+    <h2  style = {{marginBottom:'5px',wordSpacing:'10px'}}>AT MM&EE Logistics, </h2> 
     <p>
    we provide a portfolio of full logistic solutions in Nigeria which includes, 
       but not limited to International and Domestic express delivery, 
@@ -115,14 +120,15 @@ const Hero = () => {
        Food Delivery, Agriculture Logistics and E-commerce Solutions.
     </p>
 
-<button className='button' ><a href="#">Learn More</a></button>
+    <Link to="/About" className="button">Learn More</Link>
 
             
                           
     </div> 
 
    <div className="right-about">      
-   <img src={image1} alt="image" className="bigImg"/>            
+   <img src={image1} alt="image" className="bigImg"/>    
+
    </div>
     </div>
 
@@ -137,11 +143,9 @@ const Hero = () => {
 {/* Another section */}
 
 <section className="serviceContainer margin">
-      <div className="serviceTop">
-      <h2 style = {{wordSpacing :'10px'}}>OUR SERVICES</h2>
+      
         <h3>Trusted For Our Services</h3>
-        <p style = {{wordSpacing :'10px'}}>MM & EE Logistics can help you with the following services  </p>
-      </div>
+      
         
 
         <div className="serviceWrapper flex">
@@ -149,15 +153,13 @@ const Hero = () => {
             {serviceData.map((data)=> (
          <div className="card">
               
-    {/* <div className="content">              */}
+    
       <div className="service-img">
         <img src={data.bgImage} alt="" />
     </div>
                 
-      <h4>{data.name}</h4>
-       {/* <p>{data.text}</p>       */}
-      {/* </div> */}
-           
+      <p>{data.name}</p>
+     
                 
       </div>
                 
@@ -167,9 +169,6 @@ const Hero = () => {
       
 </section>
 
-<section className="truck-wrapper ">
-  <div className="truck-image"></div>
-</section>
 
 <section className='contact flex section-p'>
   
@@ -183,14 +182,15 @@ const Hero = () => {
     <h3 >LOOKING FOR THE BEST LOGISTICS SERVICES?</h3>
     <div className="dash-wrapper"style={{marginTop:"1.3rem"}}>
     <div className="dash"></div>
-    <p style={{marginLeft:"1.3rem"}}>We make your cargo transport simple, contact us today.</p>
+    <p style={{marginLeft:"0.6rem"}}>We make your cargo transport simple, contact us today.</p>
     </div>
     </div>
 
   </div>
 
   <div className='col2'>
-    <button className='button'><a href="#">Contact us today</a></button>
+
+  <a href="contact">Contact Us Today</a>
   </div>
 </section>
 

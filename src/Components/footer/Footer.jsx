@@ -5,7 +5,7 @@ import { } from '@fortawesome/free-solid-svg-icons';
 const Footer = () => {
   return (
     <footer>
-      <section className='flex section-p' style={{background:"lightBlue"}}>
+      <section className='flex section-p'>
 
 
       <div className="col">
@@ -14,8 +14,8 @@ const Footer = () => {
 
       <div className="col">
         <h4>MM&EE Logistics Ltd</h4>
-        <p>Ajose Adeogun street, Victoria island, Lagos, Nigeria</p>
-        <p>MM&EE@email.com</p>
+        <p>13 Salami Solebo Street, Igbo Oluwo Estate, Ikorodu, Lagos State, Nigeria</p>
+        <p>mmeegloballogistics@gmail.com</p>
       </div>
 
       <div className="col">
@@ -32,7 +32,7 @@ const Footer = () => {
       </section>
    
 
-       <section style={{background:"green"}}>
+       <section className='footer'>
        <div className="copyright">
         <p>&copy; {new Date().getFullYear()}, MM & EE Logistics - Support. All rights reserved.</p>
       </div>

@@ -9,10 +9,16 @@ footer .col p{
     margin:0 0 10px 0;
     
 }
-
+footer section.flex{
+    background-color:var(--greyBg);
+}
 
 .copyright{
     width: 100%;
     text-align: center;
     padding: 20px;
+}
+
+.footer{
+    background:var(--primary);
 }
