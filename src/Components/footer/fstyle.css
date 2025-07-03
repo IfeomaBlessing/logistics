@@ -1,0 +1,24 @@
+
+
+footer .col h4{
+    margin-bottom: 20px;
+}
+
+footer .col p{
+    color: rgb(107, 101, 101);
+    margin:0 0 10px 0;
+    
+}
+footer section.flex{
+    background-color:var(--greyBg);
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer{
+    background:var(--primary);
+}

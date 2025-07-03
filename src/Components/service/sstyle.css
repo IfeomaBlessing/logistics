@@ -1,0 +1,152 @@
+.serviceContainer{
+    background-position: center;
+    background: 
+    rgba(1, 22, 1, 0.5)
+    url('../../assets/delivery.jpg') no-repeat center/ cover;
+    background-blend-mode:darken;
+    position: relative;
+    z-index: 1;
+}
+
+.serviceContainer h2{
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+
+.serviceWrapper{
+justify-content:space-around;
+flex-wrap: wrap;
+margin-top:1rem;
+}
+
+
+.card{    
+       background:white;
+       width:300px;
+       height:250px;
+       margin:10px 0;
+       display:flex;
+       align-items: center;
+       flex-direction:column;
+       box-shadow: 10px 6px 15px rgba(0, 0, 0, 0.6);
+}
+
+
+.service-img img{
+    max-width:200;
+    width:100%;
+    height:200px;
+    margin-bottom:5px;
+}
+
+.FAQ h2{
+    text-align: center;
+    color: rgb(82, 9, 9);
+    
+}
+.accordion-container{
+    margin:30px auto;
+    max-width:900px;
+    width: 100%;
+    background:white;
+    padding: 30px;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.3),
+    2px 2px 3px 2px rgba(0,0,0,0.4);
+}
+.wrapper{
+    padding: 12px;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.3),
+    2px 2px 3px 2px rgba(0,0,0,0.4);
+    margin:10px;
+}
+.question{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding:0.5rem;
+    cursor: pointer;
+
+    
+}
+
+.answer{
+    line-height: 20px;
+    max-height:0;
+    overflow:hidden;
+    transition:all 1s ease-in-out;
+    
+}
+.showAnswer{
+    max-height: 400px;
+    padding-top: 10px;
+    overflow: visible;
+    padding:10px 0.5rem 0;
+}
+
+
+@media screen and (max-width:912px) { 
+    .serviceWrapper{
+        
+       }
+       .card{
+       
+       
+    }
+ }
+
+@media screen and (max-width:850px) { 
+    .serviceWrapper{
+        
+
+       }
+       .card{
+      
+       
+    }
+ }
+ @media screen and (max-width:769px){
+    .card{
+      
+    }
+    .accordion-container{
+        padding: 10px;
+   }
+ }
+
+ @media screen and (max-width:600px) { 
+    .serviceWrapper{
+
+       
+       }
+       .card{
+        
+    }
+}
+
+    @media screen and (max-width:450px) { 
+
+        .serviceHead{
+            
+            background-image: linear-gradient(0deg,transparent,rgba(68, 75, 46, 0.7),
+            #bced5a1a),url(../../assets/sbg.jpg);
+            height:70vh;
+            width: 100%;
+            -webkit-text-stroke: 1px white;
+            font-size:2.5rem;
+            /* background-image: ; change the background image for phone size*/
+        }
+        .serviceWrapper{
+           
+           }
+           .card{
+           
+        }
+        
+        
+}
