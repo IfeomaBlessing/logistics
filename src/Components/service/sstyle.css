@@ -1,14 +1,24 @@
 .serviceContainer{
     background-position: center;
     background: 
+<<<<<<< HEAD
     rgba(1, 22, 1, 0.5)
     url('../../assets/delivery.jpg') no-repeat center/ cover;
     background-blend-mode:darken;
+=======
+    linear-gradient(0deg, transparent, rgba(122, 106, 81, 0.7), rgba(255, 246, 233, 0.1)),
+    url('../../assets/delivery.jpg') no-repeat center/ cover;
+    padding-bottom:;
+>>>>>>> aff2200c121e4d33d5fb091e25c7a521e0f2c83b
     position: relative;
     z-index: 1;
 }
 
+<<<<<<< HEAD
 .serviceContainer h2{
+=======
+.serviceContainer h3{
+>>>>>>> aff2200c121e4d33d5fb091e25c7a521e0f2c83b
     -webkit-text-stroke: 1px white;
     color: transparent;
     text-align: center;
@@ -33,6 +43,10 @@ margin-top:1rem;
        display:flex;
        align-items: center;
        flex-direction:column;
+<<<<<<< HEAD
+=======
+       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+>>>>>>> aff2200c121e4d33d5fb091e25c7a521e0f2c83b
        box-shadow: 10px 6px 15px rgba(0, 0, 0, 0.6);
 }
 
@@ -44,6 +58,19 @@ margin-top:1rem;
     margin-bottom:5px;
 }
 
+<<<<<<< HEAD
+=======
+
+.serviceWrapper .card h4{
+ color: ;
+}
+
+
+
+
+
+
+>>>>>>> aff2200c121e4d33d5fb091e25c7a521e0f2c83b
 .FAQ h2{
     text-align: center;
     color: rgb(82, 9, 9);

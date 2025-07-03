@@ -22,8 +22,10 @@ const Service = () => {
 
 <section className="Header flex">
 
+
 <p style={{color:"white"}}>MM&EE Logistics</p>
 <h2 style={{color:"white"}}>OUR SERVICES</h2>
+
 
 </section>
 
@@ -55,7 +57,7 @@ const Service = () => {
               : 'UNMATCHED EXPERIENCE AND COMMITMENT'}
           </h2>
           <p>{x.text}</p>
-        
+
         </div>
       </div>
     </article>

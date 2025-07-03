@@ -19,7 +19,7 @@ export const heroData =[
     {
         bgImage: image3,
         heroHeader:"Best Delivery Service",
-        heroText:"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus corporis rerum ad nobis veniam",
+        heroText:"Global Reach, Local Touch",
         alt:"House"
     }
 ]

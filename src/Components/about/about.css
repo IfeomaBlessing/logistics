@@ -5,12 +5,18 @@
 
 }
 .Header{
+<<<<<<< HEAD
     /* background: 
     linear-gradient(0deg, transparent, rgba(122, 106, 81, 0.7), rgba(212, 183, 142, 0.1)),
     url('../../assets/images/aboutCard.jpg') center; */
     background: 
     rgba(1, 22, 1, 0.5) url('../../assets/images/aboutCard.jpg') center ;
   background-blend-mode:multiply;
+=======
+    background: 
+    linear-gradient(0deg, transparent, rgba(122, 106, 81, 0.7), rgba(212, 183, 142, 0.1)),
+    url('../../assets/images/aboutCard.jpg') center;
+>>>>>>> aff2200c121e4d33d5fb091e25c7a521e0f2c83b
     height:35vh;
     flex-direction: column;
     justify-content: center;
@@ -40,6 +46,7 @@ section .homeAbout{
     margin-right: 10px;
     border-radius:10px;
 }
+<<<<<<< HEAD
 .Box-container.chooseUs{
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap:0.4rem;
@@ -53,6 +60,8 @@ section .homeAbout{
     
 }
 
+=======
+>>>>>>> aff2200c121e4d33d5fb091e25c7a521e0f2c83b
 
 
 @media screen and (max-width:912px){

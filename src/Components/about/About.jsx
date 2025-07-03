@@ -1,7 +1,7 @@
 import React from 'react'
 import "../about/about.css"
 import image1 from '../../assets/images/About_img.jpg'
-import Testimonial from './Testimonials'
+import Testimonial from './Testimonial';
 import Choose from '../about/choose';
 import {Link} from 'react-router-dom'
 import serviceData from '../service/serviceData';
@@ -16,8 +16,10 @@ const About = () => {
 
     <section className="Header flex">
 
-    <p style={{color:"white"}}>MM&EE Logistics</p>
+    <p style={{color:"white"}}> MM&EE Logistics</p>
     <h2 style={{color:"white"}}>ABOUT US</h2>
+
+
    
     </section>
 
@@ -100,6 +102,7 @@ const About = () => {
            
     </section>
 
+
     <div className='homeContainer '>
 
 <section className="Box section-p" >
@@ -122,10 +125,9 @@ const About = () => {
 
 
 </div>
-
     </div>
     </>
   )
 }
 
-export default About
+export default About;
