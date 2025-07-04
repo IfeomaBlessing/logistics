@@ -1,29 +1,28 @@
-import {  faCrosshairs, faBriefcase  } from '@fortawesome/free-solid-svg-icons'
-import { faVolumeControlPhone } from '@fortawesome/free-solid-svg-icons/faVolumeControlPhone';
+import { Truck, Shield, Settings, Target } from 'react-feather';
+
 
 
 export const Choose =[
     {
         header: "Fast Delivery",
-        icon:faVolumeControlPhone
+        icon:<Truck size={24} color="#f59e0b" />
     },
     {
         header: "Secure Cargo",
-        icon:faBriefcase
+        icon:<Shield size={24} color="#f59e0b" />
     },
     
     {
     
-        icon:faCrosshairs,
+        
         header: "Flexible Solutions",
-     
+        icon:<Settings size={24} color="#f59e0b" />
     },
 
     {
     
-        icon:faCrosshairs,
         header: "Customer-centric",
-     
+       icon:<Target size={24} color="#f59e0b" />
     },
    
 ]

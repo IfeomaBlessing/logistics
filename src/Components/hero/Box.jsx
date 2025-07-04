@@ -18,11 +18,7 @@ export const Box =[
     
         icon:faCrosshairs,
         header: "OUR LOCATION",
-<<<<<<< HEAD
         text:"13 Salami Solebo Street, Nigeria",
-=======
-        text:"13 Salami Solebo Street, Igbo Oluwo Estate",
->>>>>>> aff2200c121e4d33d5fb091e25c7a521e0f2c83b
     },
    
 ]

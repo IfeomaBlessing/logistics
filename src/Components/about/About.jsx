@@ -1,10 +1,7 @@
 import React from 'react'
 import "../about/about.css"
 import image1 from '../../assets/images/About_img.jpg'
-import Testimonial from './Testimonial';
 import Choose from '../about/choose';
-import {Link} from 'react-router-dom'
-import serviceData from '../service/serviceData';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const About = () => {
@@ -12,20 +9,15 @@ const About = () => {
 
     <>
       <div className='page'>
-       
-
     <section className="Header flex">
 
     <p style={{color:"white"}}> MM&EE Logistics</p>
     <h2 style={{color:"white"}}>ABOUT US</h2>
-
-
    
     </section>
 
 
     <section>
-           
     <div className="homeAbout flex margin" style={{marginBottom:'2.5rem'}}>
 
      <div className="right-about">      
@@ -44,7 +36,6 @@ const About = () => {
        Food Delivery, Agriculture Logistics and E-commerce Solutions.
     </p>
 
-<button className='button' ><a href="#">Learn More</a></button>
 
             
                           
@@ -105,22 +96,25 @@ const About = () => {
 
     <div className='homeContainer '>
 
-<section className="Box section-p" >
-  
- <div className="Box-container chooseUs">
- {Choose.map((x)=> (                
-                <div className="Box-content chooseUs">
-                   <FontAwesomeIcon icon={x.icon} className ="icons" style={{marginBottom:"2rem"}} />
-                  
-                   <div className="content" style={{marginLeft:'0'}}>
-                   <h4>{x.header}</h4>
-      
-                   </div>
-                  </div>
-         ))
-        }
- </div>
+    <section className="Box section-p">
+  <div className="Box-container chooseUs">
+    {Choose.map((x, index) => (                
+      <div className="Box-content chooseUs" key={index}>
+        
+        {/* ✅ Render react-feather icon directly */}
+        <div className="icons" style={{ marginBottom: "2rem" }}>
+          {x.icon}
+        </div>
+
+        <div className="content" style={{ marginLeft: '0' }}>
+          <h4>{x.header}</h4>
+        </div>
+
+      </div>
+    ))}
+  </div>
 </section>
+
     
 
 
