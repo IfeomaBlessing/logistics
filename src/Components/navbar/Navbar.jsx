@@ -2,7 +2,7 @@
 import React, {useState} from 'react'
 import {Link, useLocation} from 'react-router-dom'
 import '../navbar/navstyle.css'
-import logo from '../../assets/real-log.png'
+import logo from '../../assets/logo.png'
 import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 

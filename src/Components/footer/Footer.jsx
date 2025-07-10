@@ -1,6 +1,7 @@
 import React from 'react';
 import '../footer/fstyle.css';
 import { } from '@fortawesome/free-solid-svg-icons';
+import logo from "../../assets/logo.png"
 
 const Footer = () => {
   return (
@@ -9,12 +10,14 @@ const Footer = () => {
 
 
       <div className="col">
-        <h4>LOGO HERE</h4>
+      <div className='logo' style={{width:"60px", height:"60px"}}>
+               <img src={logo} alt='logo'/> 
+            </div>
       </div>
 
       <div className="col">
         <h4>MM&EE Logistics Ltd</h4>
-        <p>13 Salami Solebo Street, Igbo Oluwo Estate, Ikorodu, Lagos State, Nigeria</p>
+        <p>13 Salami Solebo Street,Nigeria</p>
         <p>mmeegloballogistics@gmail.com</p>
       </div>
 

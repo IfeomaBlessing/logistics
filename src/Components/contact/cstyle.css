@@ -53,14 +53,6 @@ a, .social-icons{
 
 
 @media screen and (max-width:600px) { 
-    .left{
-        margin-bottom:1.5rem;
-    }
-.left, .right{
-    width:100%;
-}
-.left h2{
-    font-size:1.5rem;
-}
+
 
 }

@@ -27,7 +27,7 @@ const About = () => {
     <div class="col-2">    
 
         
-    <h2  style = {{marginBottom:'3px',wordSpacing:'10px'}}>AT MM&EE Logistics, </h2> 
+    <h3  style = {{marginBottom:'3px',wordSpacing:'10px'}}>AT MM&EE Logistics, </h3> 
     <p>
    we provide a portfolio of full logistic solutions in Nigeria which includes, 
       but not limited to International and Domestic express delivery, 
@@ -47,7 +47,7 @@ const About = () => {
     </section>
 
     <section className='aboutContent section section-p'>
-       <h2 >THEY SAY IT CAN'T BE DONE, WE SAY IT WILL BE DONE</h2>
+       <h3 >THEY SAY IT CAN'T BE DONE, WE SAY IT WILL BE DONE</h3>
        <p>When you work with MM&EE Logistics, you can be rest assured that we will never leave  a 
         shipment behind! We will do whatever it takes to meet your business unique needs and offer exquisite service.
        </p>
@@ -102,7 +102,7 @@ const About = () => {
       <div className="Box-content chooseUs" key={index}>
         
         {/* ✅ Render react-feather icon directly */}
-        <div className="icons" style={{ marginBottom: "2rem" }}>
+        <div className="icons" style={{ marginBottom: "0.5rem" }}>
           {x.icon}
         </div>
 

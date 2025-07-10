@@ -3,10 +3,9 @@ import { Link } from 'react-router-dom'
 import heroData from './heroData'
 import '../hero/herostyle.css'
 import serviceData from '../service/serviceData';
-import Testimonial from '../about/Testimonials';
 import Box from '../hero/Box';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faArrowRight, faPhone} from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import image1 from '../../assets/images/abt_img.jpg'
 
 
@@ -104,14 +103,14 @@ const Hero = () => {
 </section>
     
     
-<section className='heroAbout margin'>
+<section className='heroAbout section-p'>
         
 
     <div className="homeAbout flex" style={{marginBottom:'2.5rem'}}>
     <div class="col-2">    
             
 
-    <h2  style = {{marginBottom:'5px',wordSpacing:'10px'}}>AT MM&EE Logistics, </h2> 
+    <h3  style = {{marginBottom:'5px',wordSpacing:'10px'}}>AT MM&EE Logistics, </h3> 
     <p>
    we provide a portfolio of full logistic solutions in Nigeria which includes, 
       but not limited to International and Domestic express delivery, 
@@ -173,18 +172,14 @@ const Hero = () => {
 <section className='contact flex section-p'>
   
   <div className='col1 flex' style={{width:"60%"}}>
-    <div className="icons">
-      <FontAwesomeIcon icon={faPhone}/>
- 
-    </div>
-
-    <div style={{marginLeft:"1.3rem"}}>
-    <h3 >LOOKING FOR THE BEST LOGISTICS SERVICES?</h3>
+    <div>
+      <h3 >LOOKING FOR THE BEST LOGISTICS SERVICES?</h3>
     <div className="dash-wrapper"style={{marginTop:"1.3rem"}}>
     <div className="dash"></div>
     <p style={{marginLeft:"0.6rem"}}>We make your cargo transport simple, contact us today.</p>
     </div>
     </div>
+  
 
   </div>
 

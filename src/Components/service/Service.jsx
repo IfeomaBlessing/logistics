@@ -34,8 +34,8 @@ const Service = () => {
     <article
       key={index}
       style={{
-        backgroundColor: index % 2 !== 0 ? 'red' : 'transparent',
-        padding: '2rem 0',
+        backgroundColor: index % 2 !== 0 ? 'var(--greyBg)' : 'transparent',
+        padding: '1.5rem 0',
       }}
     >
       <div
@@ -51,11 +51,10 @@ const Service = () => {
         </div>
 
         <div className="col-2">
-          <h2 style={{ marginBottom: '1rem', wordSpacing: '6px' }}>
-            {index % 2 === 0
-              ? 'AT MM&EE Logistics'
-              : 'UNMATCHED EXPERIENCE AND COMMITMENT'}
-          </h2>
+          <h3 style={{ marginBottom: '1rem', wordSpacing: '6px' }}>
+          {x.name}
+          </h3>
+
           <p>{x.text}</p>
 
         </div>
@@ -66,15 +65,13 @@ const Service = () => {
 
 
     <section className="FAQ section-p">
-    <h2>Frequently Asked Questions</h2>
-    
      <div className="accordion-container">
      {Faq.map((x, currAccordion)=> (                
                    <div className="wrapper">
                    <div className={accordion === currAccordion ?"question active":"question"} onClick={()=>handleAccordion(currAccordion)}>
-                     <h3>{x.question}</h3>
+                     <p>{x.question}</p>
                      <div className="Acc-Icons">
-                      {accordion === currAccordion ?(<FontAwesomeIcon icon={ faPlus}/>): (<FontAwesomeIcon icon={ faMinus} />)}
+                      {accordion === currAccordion ?(<FontAwesomeIcon icon={ faMinus}/>): (<FontAwesomeIcon icon={ faPlus} />)}
                      </div>
                     
                    </div>

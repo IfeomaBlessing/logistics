@@ -1,28 +1,28 @@
-import { Truck, Shield, Settings, Target } from 'react-feather';
+import { Truck, Shield, Settings, Target, Clock,Headphones  } from 'react-feather';
 
 
 
 export const Choose =[
     {
         header: "Fast Delivery",
-        icon:<Truck size={24} color="#f59e0b" />
+        icon:<Clock  size={24} color="darkGreen" />
     },
     {
         header: "Secure Cargo",
-        icon:<Shield size={24} color="#f59e0b" />
+        icon:<Truck size={24} color="darkGreen" />
     },
     
     {
     
         
         header: "Flexible Solutions",
-        icon:<Settings size={24} color="#f59e0b" />
+        icon:<Settings size={24} color="darkGreen" />
     },
 
     {
     
         header: "Customer-centric",
-       icon:<Target size={24} color="#f59e0b" />
+       icon:<Headphones size={24} color="darkGreen" />
     },
    
 ]
