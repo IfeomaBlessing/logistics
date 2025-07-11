@@ -77,14 +77,13 @@ p, li{
 .button:hover{
 
   color: var(--text);
-  background-color: #84CC16;
+  background-color:var(--accent);
   
 }
 .btn1{
   outline: none;
   border: none;
-  background:rgb(82, 9, 9);
-  background: #14532D;
+  background:var(--primary);
   font-size: 14px;
   color:white;
   padding:0.6rem 1.4rem;

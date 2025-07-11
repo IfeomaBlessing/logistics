@@ -24,7 +24,7 @@ const Navbar = ({scroll}) => {
                <img src={logo} alt='logo'/> 
             </div>
             
-         <nav>
+         <nav className="flex">
     
             <ul className={clicked ? 'nav-menu active' : 'nav-menu'}>
            <li>
