@@ -46,13 +46,11 @@ const Navbar = ({scroll}) => {
                           Services</Link>
                     </li>
     
-                    {/* <li>
-                        <Link to="/Contact" className= 'navlink'
-                     
-                         onClick ={clickMenu}>
-                          Contact</Link>
-                    </li> */}
-    
+                    <li>
+                    <a href="#contact" className= "navlink">Contact</a>
+
+                    </li> 
+                  
             </ul>
     
             <div className='Menu' onClick={clickMenu}>

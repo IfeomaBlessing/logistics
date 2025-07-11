@@ -1,12 +1,13 @@
 import React, {useState} from 'react'
 import { Routes, Route } from 'react-router-dom';
-// import './App.css'
 import Hero from '../Components/hero/Hero'
 import Navbar from '../Components/navbar/Navbar'
 import Service from '../Components/service/Service'
 import Contact from '../Components/contact/Contact'
 import Footer from '../Components/footer/Footer'
 import About from "../Components/about/About"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 const Layout=()=> {
     const [scroll, setScroll] = useState(false)
@@ -27,11 +28,20 @@ const Layout=()=> {
       <Route path="/" element={<Hero />} />
       <Route path="/about" element={<About />} />
       <Route path="/services" element={<Service />} />
-      <Route path="/contact" element={<Contact />} />
     </Routes>
 
    
        <Contact/>
+       {/* WhatsApp Chat Icon */}
+<a
+  href="https://wa.me/2348055844640"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="whatsapp-float"
+>
+
+     <FontAwesomeIcon icon={ faWhatsapp} className='icon'/>
+</a>
       <Footer/>
     </>
   )

@@ -7,7 +7,7 @@ import image from '../../assets/images/contact_img.jpeg'
 const Contact = () => {
   return (
           <>
-          <section className='about-page margin'>
+          <section id="contact" className='about-page margin'>
         
 
         <div className="aboutBox flex" style={{alignItems:'flex-start'}}>
