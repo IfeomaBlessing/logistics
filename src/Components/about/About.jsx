@@ -2,7 +2,6 @@ import React from 'react'
 import "../about/about.css"
 import image1 from '../../assets/images/About_img.jpg'
 import Choose from '../about/choose';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const About = () => {
   return (
