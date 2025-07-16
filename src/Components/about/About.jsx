@@ -1,6 +1,6 @@
 import React from 'react'
 import "../about/about.css"
-import image1 from '../../assets/images/About_img.jpg'
+import image1 from '../../assets/images/abtImg.webp'
 import Choose from '../about/choose';
 
 const About = () => {
