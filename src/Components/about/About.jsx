@@ -1,7 +1,12 @@
 import React from 'react'
 import "../about/about.css"
-import image1 from '../../assets/abtImg.webp'
 import Choose from '../about/choose';
+import image1 from '../../assets/images/abt_img.jpg'
+
+import image2 from '../../assets/images/mini1.jpg'
+import image3 from '../../assets/images/mini2.jpg'
+
+
 
 const About = () => {
   return (
@@ -80,8 +85,8 @@ const About = () => {
                 Our experience in the logistics field has given us the experience needed to ensure your satisfaction everytime.
        </p>
                 <div className="miniImage flex">
-                <img src={image1} alt="image" className="bigImg"/>   
-                <img src={image1} alt="image" className="bigImg"/>   
+                <img src={image2} alt="image" className="bigImg"/>   
+                <img src={image3} alt="image" className="bigImg"/>   
                   </div>         
           </div> 
        

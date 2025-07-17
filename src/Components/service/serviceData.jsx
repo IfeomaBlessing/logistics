@@ -2,6 +2,7 @@
 import service1 from '../../assets/air.jpeg'
 import service2 from '../../assets/cargo.jpg'
 import service4 from '../../assets/images/warehouse.jpg'
+import service5 from '../../assets/images/custom.jpg'
 import service3 from '../../assets/images/Road.jpg'
 
 export const serviceData =[
@@ -30,7 +31,7 @@ export const serviceData =[
         alt:"Warehousing",
         text:"Our warehousing services are designed to optimize your inventory and distribution strategy. We offer secure storage facilities with advanced inventory management systems, climate control options, and flexible short- or long-term storage plans. Count on us for streamlined fulfillment, reduced overhead, and improved supply chain visibility."
     },
-    {     bgImage: service4,
+    {     bgImage: service5,
         name:"Custom Clearance",
         alt:"Land",
         text:"Navigate complex import/export regulations with ease. Our customs clearance experts manage all documentation, compliance checks, and duties on your behalf — ensuring your shipments cross borders smoothly and legally. We reduce delays, minimize risk, and keep your operations running without disruption"
