@@ -48,7 +48,7 @@ const Hero = () => {
 
   return (
     <div className='homeContainer'>
-    <section className='heroSection'id='Home'>
+    <section className='heroSection'>
      <div className="heroWrapper">
 
      {heroData.map((data,index)=>(
@@ -62,7 +62,7 @@ const Hero = () => {
                   <h1>{data.heroHeader}</h1>
                   <p>{data.heroText}</p>
                   <div className="btn">
-                  <button className='button'>Contact Us</button>
+                  <a href="tel:+2348055844640" className="button">Contact Us</a>
                   </div>
                   </div>
                   </div>

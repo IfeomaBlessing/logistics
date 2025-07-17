@@ -93,15 +93,19 @@ margin-top:1rem;
 
 
 
-    @media screen and (max-width:450px) { 
+    @media screen and (max-width:415px) { 
 
-       
-        .serviceWrapper .flex{
-            
-           }
-           .card{
-           
-        }
-        
+        .accordion-container{
+            padding:4px;
+       }
+       .wrapper{
+        padding: 10px;
+        margin:10px;
+    }
+       .question{
+        border:1px ;
+        padding:0.3rem;
+        cursor: pointer;
+    }  
         
 }

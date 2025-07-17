@@ -6,7 +6,7 @@ import image3 from '../../assets/log4.jpg'
 export const heroData =[
     {
         bgImage: image1,
-        heroHeader:"MM & EE Logistics Got You Covered",
+        heroHeader:"MM&EE Global Logistics Got You Covered",
         heroText:"We deliver worldwide, Tested and Trusted",
         alt:"Land"
     },

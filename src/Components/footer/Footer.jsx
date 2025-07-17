@@ -14,7 +14,7 @@ const Footer = () => {
       </div>
 
       <div className="col">
-        <h4>MM&EE Logistics Ltd</h4>
+        <h4>MM&EE Global Logistics Ltd</h4>
         <p>13 Salami Solebo Street,Nigeria</p>
         <p>mmeegloballogistics@gmail.com</p>
       </div>
@@ -35,7 +35,7 @@ const Footer = () => {
 
        <section className='footer'>
        <div className="copyright">
-        <p>&copy; {new Date().getFullYear()}, MM & EE Logistics - Support. All rights reserved.</p>
+        <p>&copy; MM & EE Logistics - Support. All rights reserved.</p>
       </div>
        </section>
     
