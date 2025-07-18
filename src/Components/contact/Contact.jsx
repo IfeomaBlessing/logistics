@@ -1,7 +1,7 @@
 import React from 'react'
 import '../contact/cstyle.css'
 import image from '../../assets/images/contact_img.jpeg'
-
+import  Form  from './Form'
 
 
 const Contact = () => {
@@ -19,20 +19,8 @@ const Contact = () => {
        <div className="col2" style={{width :"45%"}}>  
        <h3>GET IN TOUCH</h3>
        <p>Please don't hesitate to contact us</p>    
-               <form action="#" style={{marginTop:"10px"}}>
-    
-               <div className='t-form'>
-               <input type="text" placeholder='Name' />
-                <input type="email" placeholder='Email' />
-                
-               </div>
-                <input type="text" placeholder='Subject' />
-            
-                
-                <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
-                <button className='button'>Submit</button>
-                
-               </form>
+       <Form/>
+        
        </div>
         </div> 
         
