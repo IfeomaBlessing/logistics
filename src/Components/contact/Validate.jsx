@@ -1,5 +1,5 @@
 
-const Validation = (values) => {
+const Validate = (values) => {
   let error = {};
   const email_pattern =/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/
   const text_pattern = /^[0-9]*$/
@@ -40,4 +40,4 @@ const Validation = (values) => {
 return error;
 }
 
-export default Validation;
+export default Validate;

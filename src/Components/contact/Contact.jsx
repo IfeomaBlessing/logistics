@@ -20,7 +20,7 @@ const Contact = () => {
        <h3>GET IN TOUCH</h3>
        <p>Please don't hesitate to contact us</p>    
        <Form/>
-        
+              
        </div>
         </div> 
         

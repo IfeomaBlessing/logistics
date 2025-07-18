@@ -7,40 +7,7 @@
     margin-bottom:2rem;
 }
 
-.left h2{
-    margin:1rem 0 0.4rem;
-    color:rgb(82, 9, 9);
-}
-.social{
-    margin-top: 0.5rem;
-}
-.co, 
-a, .social-icons{
-    display:flex;
-    align-items: center;
-    color: rgb(19, 18, 18);
-    /* margin-bottom:2rem; */
-}
-.co{
-    margin-bottom:1.5rem;
-}
-.icon.con:hover{
-    background:rgb(239, 192, 104);
-        color:rgb(82, 9, 9);
-}
-.social{
-    margin-top:0.6rem;
 
-}
-.social-icons{
-    margin-top:0.6rem;
-}
-.social-icons a {
-    margin-right:0.7rem;
-    background:rgb(82, 9, 9);
-    color:white;
-    padding:0.4rem;
-}
 .bg{
     height:40vh;
     width: 100%;

@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import '../contact/cstyle.css'
-import '../contact/Validate'
+import Validate from '../contact/Validate'
 
 const Form = () => {
     const [values, setValues] = useState({
@@ -19,7 +19,7 @@ const Form = () => {
 
     const handleSend =(e)=>{
         e.preventDefault();
-        setError(Validation(values));
+        setError(Validate(values));
         setIsDataCorrect(true)
        
         if(Object.keys(error).length === 0 && isDataCorrect){
@@ -56,7 +56,7 @@ const Form = () => {
       </div>
 
       <div>
-      <input type='digit'placeholder='Phone Number'
+      <input type='tel'placeholder='Phone Number'
       name='phone' value={values.phone}
       onChange={handleInput}/>
        {
