@@ -9,20 +9,23 @@ const Form = () => {
         email:"",
         message:""
     })
-
-    const handleInput =(e)=>{
-        setValues({...values, [e.target.name]:e.target.value})
-    }
     const [error, setError] =useState({})
     const [isDataCorrect, setIsDataCorrect] =useState(false)
   const [success, setSuccess] =useState("")
 
+    const handleInput =(e)=>{
+        setValues({...values, [e.target.name]:e.target.value})
+        setError({...error, [e.target.name] :""})  //Clears erros when user types
+    }
+    
+
     const handleSend =(e)=>{
         e.preventDefault();
-        setError(Validate(values));
+        const validationErrors =  Validate(values);
+        setError(validationErrors);
         setIsDataCorrect(true)
        
-        if(Object.keys(error).length === 0 && isDataCorrect){
+        if(Object.keys(validationErrors).length === 0 && isDataCorrect){
             setSuccess(`Hi ${values.name}, Your message has been sent successfully`);
 
             setValues({name:"",
