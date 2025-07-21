@@ -3,7 +3,8 @@ const Validate = (values) => {
   let error = {};
   const email_pattern =/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/
   const text_pattern = /^[0-9]*$/
-  const message_pattern = /^[a-zA-Z\s.,?k w!\\n]+$/
+ const message_pattern = /^[\w\s.,?!'\n\r-]+$/;
+
   
 
   if(!values.name){
@@ -36,6 +37,12 @@ const Validate = (values) => {
   }else if(!message_pattern.test(values.message)){
       error.message ="This is an invalid message"
   } 
+  else {
+    const wordCount = values.message.trim().split(/\s+/).length;
+    if (wordCount < 15) {
+      error.message = "Message must be at least 15 words";
+    }
+  }
  
 return error;
 }

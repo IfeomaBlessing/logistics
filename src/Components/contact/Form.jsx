@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import '../contact/cstyle.css'
+import emailjs from '@emailjs/browser';
 import Validate from '../contact/Validate'
 
 const Form = () => {
@@ -10,7 +11,6 @@ const Form = () => {
         message:""
     })
     const [error, setError] =useState({})
-    const [isDataCorrect, setIsDataCorrect] =useState(false)
   const [success, setSuccess] =useState("")
 
     const handleInput =(e)=>{
@@ -23,9 +23,24 @@ const Form = () => {
         e.preventDefault();
         const validationErrors =  Validate(values);
         setError(validationErrors);
-        setIsDataCorrect(true)
+    
        
-        if(Object.keys(validationErrors).length === 0 && isDataCorrect){
+        if(Object.keys(validationErrors).length === 0){
+          emailjs.send(
+            'service_ej0flyn',           // your service ID
+            'template_nva4owd',        // your client template ID
+            values,
+            'KYMZjeKp9HyjmZrm9'            // your EmailJS public key
+          );
+
+           // Send to user (confirmation email)
+      emailjs.send(
+        'service_ej0flyn',
+        'template_4pp22zo',          // your user auto-reply template ID
+        values,
+        'KYMZjeKp9HyjmZrm9'
+      );
+
             setSuccess(`Hi ${values.name}, Your message has been sent successfully`);
 
             setValues({name:"",
