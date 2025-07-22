@@ -128,6 +128,18 @@ input,textarea{width: 100%;
     box-shadow:2px 2px 8px rgba(0,0,0,0.5),
     5px 5px 10px rgba(0,0,0,0.2);
 }
+.custom-phone-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid grey;
+    border-radius: 4px;
+    margin-bottom: 0.4rem;
+    color: var(--nav-color);
+    background: transparent;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.5),
+                5px 5px 10px rgba(0,0,0,0.2);
+  }
+
 
 form button{
     display: block;

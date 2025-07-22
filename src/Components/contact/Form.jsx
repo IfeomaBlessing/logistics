@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
-import '../contact/cstyle.css'
 import emailjs from '@emailjs/browser';
 import Validate from '../contact/Validate'
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/style.css';
+import '../contact/cstyle.css'
 
 const Form = () => {
     const [values, setValues] = useState({
@@ -74,9 +76,19 @@ const Form = () => {
       </div>
 
       <div>
-      <input type='tel'placeholder='Phone Number'
-      name='phone' value={values.phone}
-      onChange={handleInput}/>
+      <PhoneInput
+    country={'ng'} // Default country (Nigeria in this case)
+    enableSearch={true} // Optional: Adds search in dropdown
+    value={values.phone}
+    onChange={(phone) => setValues({ ...values, phone })}
+    inputProps={{
+      name: 'phone',
+      required: true,
+      autoFocus: false
+    }}
+    inputClass="custom-phone-input"
+    className = 'input'
+  />
        {
         error.phone && <p style={{color:"red", fontSize:"13px", marginBottom:"4px"}}>{error.phone}</p> 
       }
