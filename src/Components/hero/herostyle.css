@@ -118,7 +118,8 @@
     font-size:25px;
 }
 
-input,textarea{width: 100%;
+input,textarea,
+.customPhone{width: 100%;
     padding:0.8rem;
     border:1px solid grey;
     border-radius: 4px;
@@ -128,7 +129,11 @@ input,textarea{width: 100%;
     box-shadow:2px 2px 8px rgba(0,0,0,0.5),
     5px 5px 10px rgba(0,0,0,0.2);
 }
-.custom-phone-input {
+
+.customPhone{
+    border: 10px solid red;
+}
+/* .custom-phone-input {
     width: 100%;
     padding: 0.8rem;
     border: 1px solid grey;
@@ -138,7 +143,7 @@ input,textarea{width: 100%;
     background: transparent;
     box-shadow: 2px 2px 8px rgba(0,0,0,0.5),
                 5px 5px 10px rgba(0,0,0,0.2);
-  }
+  } */
 
 
 form button{

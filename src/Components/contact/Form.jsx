@@ -77,18 +77,11 @@ const Form = () => {
 
       <div>
       <PhoneInput
-    country={'ng'} // Default country (Nigeria in this case)
-    enableSearch={true} // Optional: Adds search in dropdown
-    value={values.phone}
-    onChange={(phone) => setValues({ ...values, phone })}
-    inputProps={{
-      name: 'phone',
-      required: true,
-      autoFocus: false
-    }}
-    inputClass="custom-phone-input"
-    className = 'input'
-  />
+  country={'ng'}
+  value={values.phone}
+  onChange={(phone) => setValues({ ...values, phone })}
+  inputClass="customPhone"
+/>
        {
         error.phone && <p style={{color:"red", fontSize:"13px", marginBottom:"4px"}}>{error.phone}</p> 
       }
