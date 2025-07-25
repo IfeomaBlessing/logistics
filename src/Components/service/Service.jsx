@@ -47,7 +47,7 @@ const Service = () => {
         }}
       >
         <div className="right-about col-2">
-          <img src={x.bgImage} alt="service" className="bigImg" />
+          <img src={x.bgImage} alt="service" className="service-img" />
         </div>
 
         <div className="col-2">

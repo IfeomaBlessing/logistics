@@ -18,33 +18,7 @@
     border-radius:5px;
 }
 
-.customPhone {
-    width: 100% !important;
-    padding: 0.8rem !important;
-    border: 1px solid red !important;
-    border-radius: 4px !important;
-    margin-bottom: 0.4rem !important;
-    color: var(--nav-color) !important;
-    background: transparent !important;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.5),
-                5px 5px 10px rgba(0,0,0,0.2) !important;
-    font-size: 16px !important;
-  }
-
-  .react-tel-input .flag-dropdown {
-  border: 1px solid red !important;
-  border-radius: 4px 0 0 4px !important;
-  background: transparent !important;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5),
-              5px 5px 10px rgba(0, 0, 0, 0.2) !important;
-}
-
-.customPhone{
-    border: 10px solid red;
-}
 
 
-@media screen and (max-width:600px) { 
 
-
-}
+  

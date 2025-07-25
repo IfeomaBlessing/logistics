@@ -21,7 +21,7 @@ const Validate = (values) => {
    if(!values.phone){
       error.phone ="Phone number is required"
   }else if(!text_pattern.test(values.phone)){
-      error.phone ="Invalid Phone number"
+    error.phone = "Enter a valid phone number with country code";
   }
   
 

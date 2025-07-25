@@ -76,11 +76,12 @@ const Form = () => {
       </div>
 
       <div>
-      <PhoneInput
-  country={'ng'}
+      <input
+  type="text"
+  name="phone"
+  placeholder="+2348123456789"
   value={values.phone}
-  onChange={(phone) => setValues({ ...values, phone })}
-  inputClass="customPhone"
+  onChange={handleInput}
 />
        {
         error.phone && <p style={{color:"red", fontSize:"13px", marginBottom:"4px"}}>{error.phone}</p> 
