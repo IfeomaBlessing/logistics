@@ -154,7 +154,7 @@ const Hero = () => {
               
     
       <div className="service-img">
-        <img src={data.bgImage} alt="" />
+        <img src={data.bgImage} alt="" className='miniImg' />
     </div>
                 
       <p>{data.name}</p>
