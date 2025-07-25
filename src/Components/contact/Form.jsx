@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 import emailjs from '@emailjs/browser';
 import Validate from '../contact/Validate'
-import PhoneInput from 'react-phone-input-2';
-import 'react-phone-input-2/lib/style.css';
 import '../contact/cstyle.css'
 
 const Form = () => {
