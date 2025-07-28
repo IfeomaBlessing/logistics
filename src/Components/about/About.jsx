@@ -2,9 +2,10 @@ import React from 'react'
 import "../about/about.css"
 import Choose from '../about/choose';
 import image1 from '../../assets/images/abt_img.jpg'
-
 import image2 from '../../assets/images/mini1.jpg'
 import image3 from '../../assets/images/mini2.jpg'
+import { motion } from 'framer-motion';
+
 
 
 
@@ -84,10 +85,40 @@ const About = () => {
                 <br />
                 Our experience in the logistics field has given us the experience needed to ensure your satisfaction everytime.
        </p>
-                <div className="miniImage flex">
-                <img src={image2} alt="image" className="bigImg"/>   
-                <img src={image3} alt="image" className="bigImg"/>   
-                  </div>         
+       <motion.div
+  className="miniImage flex"
+  initial="hidden"
+  whileInView="visible"
+  variants={{
+    visible: {
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  }}
+  viewport={{ once: true, amount: 0.2 }}
+>
+  <motion.img
+    src={image2}
+    alt="image"
+    className="bigImg"
+    variants={{
+      hidden: { opacity: 0, x: 100, rotate: 20 },
+      visible: { opacity: 1, x: 0, rotate: 0, transition: { duration: 1.2 } },
+    }}
+  />
+
+  <motion.img
+    src={image3}
+    alt="image"
+    className="bigImg"
+    variants={{
+      hidden: { opacity: 0, x: 100, rotate: 20 },
+      visible: { opacity: 1, x: 0, rotate: 0, transition: { duration: 1 } },
+    }}
+  />
+</motion.div>
+        
           </div> 
        
          

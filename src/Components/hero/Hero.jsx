@@ -7,6 +7,7 @@ import Box from '../hero/Box';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight} from '@fortawesome/free-solid-svg-icons';
 import image1 from '../../assets/images/abt_img.jpg'
+import { motion } from 'framer-motion';
 
 
 
@@ -119,10 +120,9 @@ const Hero = () => {
        Food Delivery, Agriculture Logistics and E-commerce Solutions.
     </p>
 
-    <Link to="/About" className="button">Learn More</Link>
+    <Link to="/About" className="button"style={{ padding: '0.5rem 2rem' }}>Learn More</Link>
 
             
-                          
     </div> 
 
    <div className="right-about">      
@@ -142,30 +142,25 @@ const Hero = () => {
 {/* Another section */}
 
 <section className="serviceContainer margin">
-      
+  <h2>Trusted For Our Services</h2>
 
-        <h2>Trusted For Our Services</h2>
-      
-
-        <div className="serviceWrapper flex">
-        
-            {serviceData.map((data)=> (
-         <div className="card">
-              
-    
-      <div className="service-img">
-        <img src={data.bgImage} alt="" className='miniImg' />
-    </div>
-                
-      <p>{data.name}</p>
-     
-                
-      </div>
-                
-             ))
-            }
+  <div className="serviceWrapper flex">
+    {serviceData.map((data, index) => (
+      <motion.div
+        className="card"
+        key={index}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: index * 0.1 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <div className="service-img">
+          <img src={data.bgImage} alt="" className="miniImg" />
         </div>
-      
+        <p>{data.name}</p>
+      </motion.div>
+    ))}
+  </div>
 </section>
 
 

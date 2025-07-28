@@ -4,6 +4,8 @@ import serviceData from './serviceData'
 import Faq from './Faq'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPlus, faMinus } from '@fortawesome/free-solid-svg-icons'
+import { motion } from 'framer-motion';
+
 
 const Service = () => {
   const [accordion, setAccordion] =useState(null)
@@ -15,6 +17,16 @@ const Service = () => {
      }
 
   }
+
+  const slideLeft = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+  };
+  
+  const slideRight = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: 'easeOut' } },
+  };
   
 
   return (
@@ -46,22 +58,33 @@ const Service = () => {
           gap: '2rem',
         }}
       >
-        <div className="right-about col-2">
+        <motion.div
+          className="right-about col-2"
+          variants={index % 2 === 0 ? slideLeft : slideRight}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <img src={x.bgImage} alt="service" className="service-img" />
-        </div>
+        </motion.div>
 
-        <div className="col-2">
+        <motion.div
+          className="col-2"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           <h3 style={{ marginBottom: '1rem', wordSpacing: '6px' }}>
-          {x.name}
+            {x.name}
           </h3>
-
           <p>{x.text}</p>
-
-        </div>
+        </motion.div>
       </div>
     </article>
   ))}
 </section>
+
 
 
     <section className="FAQ section-p">
