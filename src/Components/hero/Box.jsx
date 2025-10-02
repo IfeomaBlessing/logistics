@@ -5,12 +5,12 @@ import { faVolumeControlPhone } from '@fortawesome/free-solid-svg-icons/faVolume
 export const Box =[
     {
         header: "CALL CENTRE",
-        text:"Give us a call on +2348055844640",
+        text:"Give us a call on +2465734",
         icon:faVolumeControlPhone
     },
     {
         header: "WORKING HOURS",
-        text:"Mon-Fri: 8am-5pm Sat: 9am-2pm",
+        text : "Mon-Fri: 8am-5pm\nSat: 9am-2pm",
         icon:faBriefcase
     },
 
@@ -18,7 +18,7 @@ export const Box =[
     
         icon:faCrosshairs,
         header: "OUR LOCATION",
-        text:"13 Salami Solebo Street, Nigeria",
+        text:"Arteta court, island",
     },
    
 ]

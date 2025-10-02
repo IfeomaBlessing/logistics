@@ -63,7 +63,7 @@ const Hero = () => {
                   <h1>{data.heroHeader}</h1>
                   <p>{data.heroText}</p>
                   <div className="btn">
-                  <a href="tel:+2348055844640" className="button">Contact Us</a>
+                  <a href="tel:+12465734" className="button">Contact Us</a>
                   </div>
                   </div>
                   </div>
@@ -95,7 +95,7 @@ const Hero = () => {
                   
                    <div className="content">
                    <h4>{x.header}</h4>
-                    <p>{x.text}</p>
+                    <p style={{ whiteSpace: 'pre-line' }}>{x.text}</p>
                    </div>
                   </div>
          ))
@@ -111,7 +111,7 @@ const Hero = () => {
     <div class="col-2">    
             
 
-    <h3  style = {{marginBottom:'5px',wordSpacing:'10px'}}>AT MM&EE Logistics, </h3> 
+    <h3  style = {{marginBottom:'5px',wordSpacing:'10px'}}>AT Global Logistics, </h3> 
     <p>
    we provide a portfolio of full logistic solutions in Nigeria which includes, 
       but not limited to International and Domestic express delivery, 
@@ -180,7 +180,7 @@ const Hero = () => {
 
   <div className='col2'>
 
-  <a href="tel:+2348055844640" className="button">Contact Us Today</a>
+  <a href="tel:+2347033827430" className="button">Contact Us Today</a>
   </div>
 </section>
 

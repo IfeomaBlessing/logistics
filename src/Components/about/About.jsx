@@ -16,7 +16,7 @@ const About = () => {
       <div className='page'>
     <section className="Header flex">
 
-    <p style={{color:"white"}}> MM&EE Logistics</p>
+    <p style={{color:"white"}}> Global Logistics</p>
     <h2 style={{color:"white"}}>ABOUT US</h2>
    
     </section>
@@ -32,7 +32,7 @@ const About = () => {
     <div class="col-2">    
 
         
-    <h3  style = {{marginBottom:'3px',wordSpacing:'10px'}}>AT MM&EE Logistics, </h3> 
+    <h3  style = {{marginBottom:'3px',wordSpacing:'10px'}}>AT Global Logistics, </h3> 
     <p>
    we provide a portfolio of full logistic solutions in Nigeria which includes, 
       but not limited to International and Domestic express delivery, 
@@ -69,7 +69,7 @@ const About = () => {
                
        <h2  style = {{marginBottom:'30px',wordSpacing:'10px'}}>UNMATCHED EXPERIENCE AND COMMITMENT </h2> 
        <p>
-         Above anything else, MM&EE Logisitcs is committed to excellent service and prompt transportation. 
+         Above anything else, Global Logisitcs is committed to excellent service and prompt transportation. 
          We take pride in being your trusted source for all your logisitcs needs.
               <br />
          Our goal is for our work and dedication to speak for themselves. We have been in busisness for 
@@ -134,7 +134,7 @@ const About = () => {
     <section className="Box section-p">
   <div className="Box-container chooseUs">
     {Choose.map((x, index) => (                
-      <div className="Box-content chooseUs" key={index}>
+      <div className="Box-content chooseUs" key={index} style={{  alignItems:"center"}}>
         
         {/* ✅ Render react-feather icon directly */}
         <div className="icons" style={{ marginBottom: "0.5rem" }}>

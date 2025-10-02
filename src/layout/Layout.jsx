@@ -34,7 +34,7 @@ const Layout=()=> {
        <Contact/>
        {/* WhatsApp Chat Icon */}
 <a
-  href="https://wa.me/2348055844640"
+  href="https://wa.me/2347033827430"
   target="_blank"
   rel="noopener noreferrer"
   className="whatsapp-float"

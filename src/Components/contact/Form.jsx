@@ -77,7 +77,7 @@ const Form = () => {
       <input
   type="text"
   name="phone"
-  placeholder="+2348123456789"
+  placeholder="+2347033827430"
   value={values.phone}
   onChange={handleInput}
 />

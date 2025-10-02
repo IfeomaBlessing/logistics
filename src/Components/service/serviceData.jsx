@@ -10,7 +10,7 @@ export const serviceData =[
         bgImage: service1,
         name:"Air Freight",
         alt:"Air Freight",
-        text:"At MM&EE Logistics, our air freight services are built for speed and reliability. We partner with major airlines to provide fast, secure, and efficient delivery of time-critical cargo to destinations worldwide. From priority shipments to specialized handling, we offer scalable solutions that keep your supply chain moving without delays."
+        text:"At Global Logistics, our air freight services are built for speed and reliability. We partner with major airlines to provide fast, secure, and efficient delivery of time-critical cargo to destinations worldwide. From priority shipments to specialized handling, we offer scalable solutions that keep your supply chain moving without delays."
     },
 
     {

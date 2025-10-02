@@ -35,7 +35,7 @@ const Service = () => {
 <section className="Header flex">
 
 
-<p style={{color:"white"}}>MM&EE Logistics</p>
+<p style={{color:"white"}}>Global Logistics</p>
 <h2 style={{color:"white"}}>OUR SERVICES</h2>
 
 

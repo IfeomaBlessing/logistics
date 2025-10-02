@@ -14,9 +14,9 @@ const Footer = () => {
       </div>
 
       <div className="col">
-        <h4>MM&EE Global Logistics Ltd</h4>
-        <p>13 Salami Solebo Street,Nigeria</p>
-        <p>mmeegloballogistics@gmail.com</p>
+        <h4>Global Logistics Ltd</h4>
+        <p>Arteta court, island</p>
+        <p>global@gmail.com</p>
       </div>
 
       <div className="col">
@@ -27,7 +27,7 @@ const Footer = () => {
 
 
          <div className='col'>
-         <a href="tel:+2348055844640" className="button">Contact Us</a>
+         <a href="tel:+2347033827430" className="button">Contact Us</a>
       </div>
 
       </section>
@@ -35,7 +35,7 @@ const Footer = () => {
 
        <section className='footer'>
        <div className="copyright">
-        <p>&copy; MM & EE Logistics - Support. All rights reserved.</p>
+        <p>&copy; Global Logistics - Support. All rights reserved.</p>
       </div>
        </section>
     
